@@ -21,13 +21,13 @@
 }
 /* Шапка */
 .page-header {
-    width: 320px;
+    width: 100%;
     height: 80px;
     border-top: 1px solid #D9FFF5;;
     background: linear-gradient(to right, #f8f8f8, #ffffff);
 }
 .page-header__name{
-    width: 320px;
+    width: 90%;
     height: 48px;
     margin: 16px;
     color: #7e7e82;
@@ -37,10 +37,12 @@
 .menu{
     width: 100%;
     height: 154px;
-    background-color: #f8f8f8;   
+    background-color: #f8f8f8;
+    overflow: hidden;   
 }
 .menu__navigation{
-    width: 270px;
+    width: 85%;
+    min-width: 270px;
     height: 154px;
     background-color: #f8f8f8; 
 }
@@ -60,7 +62,7 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-style:solid;
-    background-image: url(image/go.svg);
+    background-image: url(/image/go.svg);
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: 185px 14px;
@@ -149,7 +151,8 @@
     width: 204px !important;
     height: 12px;
     margin-top: 36px;
-    margin-left: 58px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .swiper-pagination-bullet-active{
     background-color: #656566;
@@ -307,7 +310,7 @@
         display: none;
     }
     .menu__More::before{
-        content: url(image/arrows_down.svg);
+        content: url(/image/arrows_down.svg);
         width: 24px;
         height: 24px; 
         margin-right: 8px;
@@ -324,7 +327,7 @@
         font-weight: 700;
     }
     .commered::before{
-        content: url(image/arrows_up.svg);
+        content: url(/image/arrows_up.svg);
         width: 24px;
         height: 24px; 
         margin-right: 8px;
