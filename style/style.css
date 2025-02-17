@@ -63,7 +63,7 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-style:solid;
-    background-image: url(/image/go.svg);
+    background-image: url(image/go.svg);
     background-repeat: no-repeat;
     background-size: 40px;
     background-position: 185px 14px;
@@ -311,7 +311,7 @@
         display: none;
     }
     .menu__More::before{
-        content: url(/image/arrows_down.svg);
+        content: url(image/arrows_down.svg);
         width: 24px;
         height: 24px; 
         margin-right: 8px;
@@ -328,7 +328,7 @@
         font-weight: 700;
     }
     .commered::before{
-        content: url(/image/arrows_up.svg);
+        content: url(image/arrows_up.svg);
         width: 24px;
         height: 24px; 
         margin-right: 8px;
