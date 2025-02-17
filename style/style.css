@@ -28,6 +28,7 @@
 }
 .page-header__name{
     width: 90%;
+    min-width: 290px;
     height: 48px;
     margin: 16px;
     color: #7e7e82;
