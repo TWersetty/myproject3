@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('fonts/TTLakes-Medium.eot') format('embedded-opentype'),
+        url('fonts/TTLakes-Medium.woff') format('woff'),
+        url('fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTLakes-Bold";
+    src: url("fonts/TTLakes-Bold.eot");
+    src: url("fonts/TTLakes-Bold.woff") format("woff");
+    src: url("fonts/TTLakes-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+} 
+.body{
+    margin: 0px;
+}
+/* Шапка */
+.page-header {
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #D9FFF5;;
+    background: linear-gradient(to right, #f8f8f8, #ffffff);
+}
+.page-header__name{
+    width: 90%;
+    min-width: 290px;
+    height: 48px;
+    margin: 16px;
+    color: #7e7e82;
+    font-family: 'TT Lakes Medium';
+}
+/* Основное меню */
+.menu{
+    width: 100%;
+    height: 154px;
+    background-color: #f8f8f8;
+    overflow: hidden;   
+}
+.menu__navigation{
+    width: 85%;
+    min-width: 270px;
+    height: 154px;
+    background-color: #f8f8f8; 
+}
+.Appearance{
+    display: flex;
+    justify-content: left;
+    width: 240px;
+    max-width: 240px;
+    height:72px;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: #ffffff;
+    border-color: #eaeaea;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-style:solid;
+    background-image: url(image/go.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 185px 14px;
+}
+.buttons__lenovo{
+    padding-top: 20px;
+    padding-left: 16px;
+}
+.buttons__Img-Lenovo{
+    width: 108px;
+    height: 32px;
+}
+.buttons__samsung{
+    padding-top: 17px;
+    padding-left: 16px;
+}
+.buttons__Img-Samsung{
+    width: 116px;
+    height: 38.52px;
+}
+.buttons__apple{
+    padding-top: 12px; 
+    padding-left: 16px;
+}
+.buttons__Img-Apple{
+    width: 44px;
+    height: 44px;
+}
+.buttons__viewsonic{
+    padding-top: 26px;
+    padding-left: 14px;
+}
+.buttons__Img-ViewSonic{
+    width: 128px;
+    height: 21px;
+}
+.buttons__bosch{
+    padding-top: 21.7px;
+    padding-left: 16px;
+}
+.buttons__Img-Bosch{
+    width: 128px;
+    height: 28.6px;
+}
+.buttons__hp{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.buttons__Img-HP{
+    width: 52px;
+    height: 52px;
+}
+.buttons__acer{
+    padding-top: 24px;
+    padding-left: 16px;
+}
+.buttons__Img-Acer{
+    width: 94px;
+    height: 24px;
+}
+.buttons__sony{
+    padding-top: 23px;
+    padding-left: 14px;
+}
+.buttons__Img-Sony{
+    width: 128px;
+    height: 25.6px;
+}
+.buttons__lenovo2{
+    padding-top: 20px;
+    padding-left: 16px;
+    display: none;
+}
+.buttons__samsung2{
+    padding-top: 17px;
+    padding-left: 16px;
+    display: none;
+}
+.buttons__apple2{
+    padding-top: 12px; 
+    padding-left: 16px;
+    display: none;
+}
+.swiper-pagination{
+    position: relative;
+    width: 204px !important;
+    height: 12px;
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-pagination-bullet-active{
+    background-color: #656566;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-color: #bbb6b6;
+}
+.menu__navigation__full-screen{
+    display: none;
+}
+.menu__More{
+    display: none;
+}
+/* версия для планшета */
+@media (min-width: 767px) {
+    .page-header {
+        width: 100%;
+        height: 56px;
+        border-top: 1px solid #D9FFF5;;
+        background: linear-gradient(to right, #f8f8f8, #ffffff); 
+    }
+    .page-header__name{
+        width: 100%;
+        height: 24px;
+        margin: 16px;
+        color: #7e7e82;
+    }
+    .menu{
+        width: 100%;
+        height: 90%;
+    }
+    .menu__navigation{
+        width: 100%;
+        height: 80%;
+    }
+    .buttons{
+     display: none
+    }
+    .menu__navigation__full-screen{
+        display: flex;
+        width: 768px;
+        height: 185px; 
+        flex-wrap: wrap;
+        overflow: hidden;
+        background-color: #f8f8f8;
+    }
+    .Appearance{
+        width: 224px;
+        height: 72px;
+        margin-left: 24px;
+        margin-right: 0px;
+        background-position: 165px 14px;
+    }
+    .full{
+        width: 768px;
+        height: 353px;
+    }
+    .menu__navigation__full-screen__lenovo{
+        padding-top: 20px;
+        padding-left: 16px;
+    }
+    .menu__navigation__full-screen__Img-Lenovo{
+        width: 108px;
+        height: 32px;
+    }
+    .menu__navigation__full-screen__samsung{
+        padding-top: 17px;
+        padding-left: 16px;
+    }
+    .menu__navigation__full-screen__Img-Samsung{
+        width: 116px;
+        height: 38.52px;
+    }
+    .menu__navigation__full-screen__apple{
+        padding-top: 12px; 
+        padding-left: 16px;
+    }
+    .menu__navigation__full-screen__Img-Apple{
+        width: 44px;
+        height: 44px;
+    }
+    .menu__navigation__full-screen__viewsonic{
+        padding-top: 26px;
+        padding-left: 14px;
+    }
+    .menu__navigation__full-screen__Img-ViewSonic{
+        width: 128px;
+        height: 21px;
+    }
+    .menu__navigation__full-screen__bosch{
+        padding-top: 21.7px;
+        padding-left: 16px;
+    }
+    .menu__navigation__full-screen__Img-Bosch{
+        width: 128px;
+        height: 28.6px;
+    }
+    .menu__navigation__full-screen__hp{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .menu__navigation__full-screen__Img-HP{
+        width: 52px;
+        height: 52px;
+    }
+    .menu__navigation__full-screen__acer{
+        padding-top: 24px;
+        padding-left: 16px;
+    }
+    .menu__navigation__full-screen__Img-Acer{
+        width: 94px;
+        height: 24px;
+    }
+    .menu__navigation__full-screen__sony{
+        padding-top: 23px;
+        padding-left: 14px;
+    }
+    .menu__navigation__full-screen__Img-Sony{
+        width: 128px;
+        height: 25.6px;
+    }
+    .menu__navigation__full-screen__lenovo2{
+        padding-top: 20px;
+        padding-left: 16px;
+        display: flex;
+    }
+    .menu__navigation__full-screen__samsung2{
+        padding-top: 17px;
+        padding-left: 16px;
+        display: flex;
+    }
+    .menu__navigation__full-screen__apple2{
+        padding-top: 12px; 
+        padding-left: 16px;
+        display: flex;
+    }
+    .menu__More{
+        display: flex;
+        width: 160px;
+        height: 34px;
+        margin-top: 24px;
+        margin-left: 24px;
+        background: none;
+        border: none;
+    }
+    .menu__down{
+        margin-top: 6px;
+        font-weight: 700;
+    }
+    .invisibal{
+        display: none;
+    }
+    .menu__More::before{
+        content: url(image/arrows_down.svg);
+        width: 24px;
+        height: 24px; 
+        margin-right: 8px;
+    }
+    .menu__up{
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+    .visibal{
+        margin-top: 5px;
+        width: 50px;
+        height: 24px;
+        font-weight: 700;
+    }
+    .commered::before{
+        content: url(image\arrows_up.svg);
+        width: 24px;
+        height: 24px; 
+        margin-right: 8px;
+    }
+    .menu__navigation__full-screen__bosch{
+        order: 4;
+    }
+    .menu__navigation__full-screen__hp{
+        order: 5;
+    }
+    .menu__navigation__full-screen__acer{
+        order: 6;
+    }
+    .menu__navigation__full-screen__sony{
+        order: 7;
+    }
+    .menu__navigation__full-screen__viewsonic{
+        order: 8;
+    }
+    .menu__navigation__full-screen__lenovo2{
+        order: 9;
+    }
+    .menu__navigation__full-screen__samsung2{
+        order: 10;
+    }
+    .menu__navigation__full-screen__apple2{
+        order: 11;
+    }
+}
+/* Версия на 1120px */
+@media (min-width: 1119px) {
+    .body{
+       max-width: 1120px;
+       width: 100%;
+       height: 412px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .page-header{
+        max-width: 1120px;
+        width: 100%;
+        height: 56px;
+    }
+    .page-header__name{
+        width: 500px;
+        height: 24px;
+        margin-left: 32px;
+        margin-top: 16px;
+    }
+    .menu{
+        width: 100%;
+        height: 100%;
+    }
+    .menu__navigation__full-screen{
+        width: 100%;
+        height: 185px;
+    }
+    .full{
+        width: 1120px;
+        height: 265px;
+    }
+    .Appearance{
+        width: 240px;
+        background-position: 185px 14px;
+    }
+}
+
