@@ -1,5 +1,5 @@
 // Переключение списка
-let Switching = document.querySelector('.menu__navigation__full-screen');
+const Switching = document.querySelector('.menu__navigation__full-screen');
 let Button = document.querySelector('.menu__More');
 let Button2 = document.querySelector('.menu__down');
 let Button3 = document.querySelector('.menu__up');
