@@ -1,11 +1,25 @@
-const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
+let swiper; 
+function initSwiper() {
+  const windowWidth = document.documentElement.clientWidth;
+  if (windowWidth < 768) {
+    if (!swiper || swiper.destroyed) {
+      swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        slidesPerView: 'auto', 
+        spaceBetween: 32, 
+        loop: false, 
+        centeredSlides: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    }
+  } else {
+    if (swiper && !swiper.destroyed) {
+      swiper.destroy(true, true); 
+    }
+  }
+}
+initSwiper();
+window.addEventListener('resize', initSwiper);

@@ -1,12 +1,14 @@
-// Переключение списка
-const Switching = document.querySelector('.menu__navigation__full-screen');
-let Button = document.querySelector('.menu__More');
-let Button2 = document.querySelector('.menu__down');
-let Button3 = document.querySelector('.menu__up');
-Button.onclick = function(){
-    Switching.classList.toggle('full');
-    Button.classList.toggle('commered');
-    Button2.classList.toggle('invisibal');
-    Button3.classList.toggle('visibal');
-    
-};
+const button = document.querySelector('.menu__More');
+const block = document.querySelector('.menu__navigation');
+const menu = document.querySelector('.menu');
+button.textContent = 'Показать все';
+button.addEventListener('click', function () {
+  block.classList.toggle('full_menu__navigation');
+  menu.classList.toggle('full_menu');
+  button.classList.toggle('menu__More_fliped');
+  if (block.classList.contains('full_menu__navigation')) {
+    button.textContent = 'Скрыть';
+  } else {
+    button.textContent = 'Показать все';
+  }
+});
